@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import useFetch from '../hooks/useFetch'
+import useFetch from '../hooks/useFecth'
 import useFetchDetails from '../hooks/useFetchDetails'
 import { useSelector } from 'react-redux'
 import moment from 'moment'
 import Divider from '../components/Divider'
-import HorizontalScollCard from '../components/HorizontalScollCard'
+import HorizontalScollCard from '../components/HorizontalScrollCard'
 import VideoPlay from '../components/VideoPlay'
 
 const DetailsPage = () => {
@@ -79,7 +79,7 @@ const DetailsPage = () => {
                     <Divider/>
                     <div className='flex items-center gap-3 my-3 text-center'>
                         <p>
-                          Staus : {data?.status}
+                          Status : {data?.status}
                         </p>
                         <span>|</span>
                         <p>

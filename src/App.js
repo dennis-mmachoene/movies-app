@@ -27,7 +27,7 @@ function App() {
 
         dispatch(setImageURL(response.data.images.secure_base_url+"original"))
     } catch (error) {
-      
+      throw error 
     }
   }
 
